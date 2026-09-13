@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Body Gradients -->
+    <linearGradient id="goldBody" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#fffef0" />
+      <stop offset="12%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+
+    <linearGradient id="goldBevelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="25%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fef08a" />
+      <stop offset="75%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#713f12" />
+    </linearGradient>
+
+    <linearGradient id="goldGleam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#fef9c3" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="goldLimb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="80%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+
+    <linearGradient id="goldDotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Smartphone Gradients -->
+    <linearGradient id="phoneBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748" />
+      <stop offset="50%" stop-color="#1a202c" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Speech Bubble Gradients -->
+    <linearGradient id="bubbleRimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <linearGradient id="bubbleFaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="80%" stop-color="#fdfbf7" />
+      <stop offset="100%" stop-color="#f3ede2" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="mascotShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.18" />
+    </filter>
+
+    <filter id="bubbleShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#78350f" flood-opacity="0.25" />
+    </filter>
+
+    <filter id="innerEngrave" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#713f12" flood-opacity="0.75" />
+    </filter>
+  </defs>
+
+  <!-- Ground Contact Shadow -->
+  <ellipse cx="270" cy="510" rx="140" ry="18" fill="#000000" opacity="0.18" />
+  <ellipse cx="270" cy="510" rx="90" ry="10" fill="#000000" opacity="0.25" />
+
+  <g filter="url(#mascotShadow)">
+    <!-- FEET / LEGS -->
+    <!-- Left Leg & Shoe -->
+    <path d="M 230,420 L 230,482" stroke="url(#goldLimb)" stroke-width="26" stroke-linecap="round" />
+    <ellipse cx="225" cy="492" rx="34" ry="18" fill="#b45309" />
+    <ellipse cx="225" cy="489" rx="32" ry="16" fill="url(#goldBody)" />
+    <ellipse cx="220" cy="485" rx="18" ry="6" fill="#ffffff" opacity="0.6" />
+
+    <!-- Right Leg & Shoe -->
+    <path d="M 315,420 L 322,482" stroke="url(#goldLimb)" stroke-width="26" stroke-linecap="round" />
+    <ellipse cx="330" cy="492" rx="34" ry="18" fill="#92400e" />
+    <ellipse cx="330" cy="489" rx="32" ry="16" fill="url(#goldBody)" />
+    <ellipse cx="325" cy="485" rx="18" ry="6" fill="#ffffff" opacity="0.6" />
+
+    <!-- LEFT ARM - Holding Smartphone to Ear -->
+    <!-- Arm segment curving up towards ear -->
+    <path d="M 200,270 C 145,260 140,195 180,185 C 190,180 200,210 205,250 Z" fill="url(#goldBevelGrad)" />
+    <path d="M 195,265 C 148,255 146,200 178,188" stroke="#fffef0" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.6" />
+
+    <!-- Hand clutching phone -->
+    <circle cx="178" cy="188" r="16" fill="url(#goldBody)" />
+    <!-- Fingers over the phone edge -->
+    <ellipse cx="168" cy="182" rx="5" ry="9" transform="rotate(-15, 168, 182)" fill="url(#goldBody)" stroke="#b45309" stroke-width="1.5" />
+    <ellipse cx="166" cy="196" rx="5" ry="9" transform="rotate(-10, 166, 196)" fill="url(#goldBody)" stroke="#b45309" stroke-width="1.5" />
+    <ellipse cx="168" cy="210" rx="5" ry="9" transform="rotate(-5, 168, 210)" fill="url(#goldBody)" stroke="#b45309" stroke-width="1.5" />
+    <ellipse cx="174" cy="222" rx="5" ry="8" transform="rotate(10, 174, 222)" fill="url(#goldBody)" stroke="#b45309" stroke-width="1.5" />
+
+    <!-- Smartphone Body -->
+    <g transform="rotate(-16, 168, 190)">
+      <!-- Phone Cast Shadow -->
+      <rect x="146" y="146" width="38" height="76" rx="9" fill="#000000" opacity="0.3" />
+      <!-- Phone Chassis -->
+      <rect x="144" y="144" width="38" height="76" rx="9" fill="url(#phoneBodyGrad)" stroke="#4a5568" stroke-width="1.5" />
+      <!-- Triple Camera Module on back of phone -->
+      <rect x="148" y="148" width="14" height="24" rx="4" fill="#0f172a" />
+      <circle cx="155" cy="154" r="2.8" fill="#1e293b" stroke="#64748b" stroke-width="0.8" />
+      <circle cx="155" cy="162" r="2.8" fill="#1e293b" stroke="#64748b" stroke-width="0.8" />
+      <circle cx="155" cy="168" r="1.5" fill="#38bdf8" opacity="0.8" />
+      <!-- Phone Edge Highlights -->
+      <line x1="147" y1="145" x2="178" y2="145" stroke="#94a3b8" stroke-width="1" opacity="0.6" />
+    </g>
+
+    <!-- RIGHT ARM - Welcoming Outstretched Gesture -->
+    <!-- Arm reaching right-downwards -->
+    <path d="M 345,265 C 385,270 410,285 435,275 C 445,270 435,250 350,230 Z" fill="url(#goldBevelGrad)" />
+    <path d="M 348,255 C 385,265 410,278 432,272" stroke="#fffef0" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.7" />
+
+    <!-- Open Hand (Palm Upward & Welcoming) -->
+    <!-- Palm base -->
+    <ellipse cx="445" cy="272" rx="16" ry="12" fill="url(#goldBody)" />
+    <!-- Thumb pointing up/in -->
+    <ellipse cx="438" cy="254" rx="6" ry="11" transform="rotate(-30, 438, 254)" fill="url(#goldBody)" stroke="#b45309" stroke-width="1.5" />
+    <!-- Index Finger -->
+    <ellipse cx="458" cy="258" rx="5.5" ry="13" transform="rotate(35, 458, 258)" fill="url(#goldBody)" stroke="#b45309" stroke-width="1.5" />
+    <!-- Middle Finger -->
+    <ellipse cx="468" cy="268" rx="5.5" ry="14" transform="rotate(60, 468, 268)" fill="url(#goldBody)" stroke="#b45309" stroke-width="1.5" />
+    <!-- Ring Finger -->
+    <ellipse cx="468" cy="280" rx="5" ry="13" transform="rotate(75, 468, 280)" fill="url(#goldBody)" stroke="#b45309" stroke-width="1.5" />
+    <!-- Pinky Finger -->
+    <ellipse cx="460" cy="290" rx="4.5" ry="11" transform="rotate(85, 460, 290)" fill="url(#goldBody)" stroke="#b45309" stroke-width="1.5" />
+    <!-- Palm specular highlight -->
+    <ellipse cx="446" cy="272" rx="9" ry="6" fill="#fffef0" opacity="0.6" />
+
+    <!-- GOLD BULLION BODY (MAIN INGOT) -->
+    <!-- Deep bottom border shadow of bar -->
+    <rect x="180" y="90" width="194" height="295" rx="38" fill="#713f12" />
+    <!-- Outer 3D Beveled Ring -->
+    <rect x="182" y="92" width="190" height="290" rx="36" fill="url(#goldBevelGrad)" />
+    <!-- Recessed Main Surface -->
+    <rect x="194" y="104" width="166" height="266" rx="28" fill="url(#goldBody)" />
+
+    <!-- Specular Highlight Curve on Top of Bullion -->
+    <path d="M 196,126 C 196,108 212,106 230,106 L 324,106 C 342,106 358,108 358,126 C 318,145 236,145 196,126 Z" fill="url(#goldGleam)" />
+    <line x1="210" y1="110" x2="344" y2="110" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.85" />
+
+    <!-- Corner Ingot Bevel Lines -->
+    <line x1="182" y1="126" x2="194" y2="132" stroke="#fef08a" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    <line x1="372" y1="126" x2="360" y2="132" stroke="#fef08a" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    <line x1="182" y1="348" x2="194" y2="342" stroke="#fef08a" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    <line x1="372" y1="348" x2="360" y2="342" stroke="#fef08a" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+
+    <!-- FRIENDLY CARTOON EYES -->
+    <!-- Left Eyebrow -->
+    <path d="M 218,162 Q 236,148 254,158" stroke="#713f12" stroke-width="5" stroke-linecap="round" fill="none" />
+    <!-- Right Eyebrow -->
+    <path d="M 302,158 Q 320,148 338,162" stroke="#713f12" stroke-width="5" stroke-linecap="round" fill="none" />
+
+    <!-- Left Eye White -->
+    <ellipse cx="236" cy="186" rx="20" ry="26" fill="#ffffff" stroke="#854d0e" stroke-width="2" />
+    <!-- Left Iris (Warm Deep Hazel Chocolate) -->
+    <ellipse cx="240" cy="186" rx="14" ry="18" fill="#451a03" />
+    <!-- Left Pupil -->
+    <ellipse cx="242" cy="186" rx="10" ry="13" fill="#170902" />
+    <!-- Big Catchlight -->
+    <circle cx="236" cy="178" r="5.5" fill="#ffffff" />
+    <!-- Small Secondary Catchlight -->
+    <circle cx="246" cy="193" r="2.8" fill="#ffffff" opacity="0.9" />
+
+    <!-- Right Eye White -->
+    <ellipse cx="320" cy="186" rx="20" ry="26" fill="#ffffff" stroke="#854d0e" stroke-width="2" />
+    <!-- Right Iris (Warm Deep Hazel Chocolate) -->
+    <ellipse cx="316" cy="186" rx="14" ry="18" fill="#451a03" />
+    <!-- Right Pupil -->
+    <ellipse cx="314" cy="186" rx="10" ry="13" fill="#170902" />
+    <!-- Big Catchlight -->
+    <circle cx="310" cy="178" r="5.5" fill="#ffffff" />
+    <!-- Small Secondary Catchlight -->
+    <circle cx="320" cy="193" r="2.8" fill="#ffffff" opacity="0.9" />
+
+    <!-- Cute Cheeks / Blush -->
+    <ellipse cx="212" cy="206" rx="11" ry="6" fill="#f43f5e" opacity="0.32" />
+    <ellipse cx="344" cy="206" rx="11" ry="6" fill="#f43f5e" opacity="0.32" />
+
+    <!-- CHEERFUL MOUTH & SMILE WITH PINK TONGUE -->
+    <path d="M 256,206 Q 278,234 300,206" stroke="#713f12" stroke-width="4.5" stroke-linecap="round" fill="#451a03" />
+    <path d="M 259,208 Q 278,236 297,208 Z" fill="#451a03" />
+    <path d="M 268,218 Q 278,214 288,218 Q 278,234 268,218 Z" fill="#fb7185" />
+    <!-- Dimple accents -->
+    <path d="M 253,203 Q 256,207 257,210" stroke="#713f12" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 303,203 Q 300,207 299,210" stroke="#713f12" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- 3D EMBOSSED LETTER 'S' (SARRAF LOGO ON CHEST) -->
+    <g filter="url(#innerEngrave)">
+      <!-- Groove Silhouette -->
+      <path d="M 304,268 C 304,250 290,244 278,242 C 264,240 252,236 252,228 C 252,220 260,214 274,214 C 288,214 298,220 300,226" 
+            stroke="#713f12" stroke-width="15" stroke-linecap="round" fill="none" opacity="0.35" />
+      <path d="M 250,290 C 252,300 262,308 278,308 C 294,308 304,300 304,286 C 304,276 294,268 278,266 C 262,264 250,256 250,242" 
+            stroke="#713f12" stroke-width="15" stroke-linecap="round" fill="none" opacity="0.35" />
+
+      <!-- Golden Beveled 'S' Stroke -->
+      <path d="M 298,246 C 296,236 286,230 276,230 C 264,230 258,236 258,242 C 258,252 268,256 284,260 C 300,264 310,272 310,288 C 310,304 296,314 278,314 C 258,314 246,302 244,288" 
+            stroke="url(#goldBevelGrad)" stroke-width="13" stroke-linecap="round" fill="none" />
+
+      <!-- Metallic Light Highlight Streak -->
+      <path d="M 297,245 C 295,237 286,232 276,232 C 266,232 260,237 260,242 C 260,250 268,254 284,258" 
+            stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9" />
+      <path d="M 308,288 C 308,302 295,312 278,312 C 260,312 250,302 246,290" 
+            stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7" />
+    </g>
+
+    <!-- Subtitle on Ingot: 'SARRAF' -->
+    <text x="277" y="344" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" letter-spacing="4" fill="#92400e" text-anchor="middle" opacity="0.85">SARRAF</text>
+  </g>
+
+  <!-- 3D SPEECH BUBBLE WITH GOLDEN DOTS -->
+  <g filter="url(#bubbleShadow)" transform="translate(370, 100)">
+    <!-- Gold Rim / Bevel around Speech Bubble -->
+    <path d="M 32,0 L 102,0 C 119,0 134,15 134,32 C 134,50 119,64 102,64 L 40,64 L 14,88 C 12,90 8,89 8,86 L 8,64 C 3.5,64 0,60.5 0,56 L 0,32 C 0,15 15,0 32,0 Z" 
+          fill="url(#bubbleRimGrad)" />
+    
+    <!-- White Porcelain Inner Bubble Face -->
+    <path d="M 34,4 L 100,4 C 115,4 128,17 128,32 C 128,47 115,60 100,60 L 38,60 L 18,80 L 18,58 C 14,58 10,54 10,50 L 10,32 C 10,17 21,4 34,4 Z" 
+          fill="url(#bubbleFaceGrad)" />
+
+    <!-- Specular Highlight Curve on Speech Bubble -->
+    <path d="M 36,8 L 98,8 C 110,8 120,16 122,26 C 96,16 52,16 26,28 C 24,18 28,8 36,8 Z" 
+          fill="#ffffff" opacity="0.75" />
+
+    <!-- Three Embossed Golden Dots (...) -->
+    <!-- Dot 1 -->
+    <circle cx="48" cy="32" r="8" fill="url(#goldDotGrad)" stroke="#b45309" stroke-width="1.5" />
+    <circle cx="46" cy="30" r="2.5" fill="#ffffff" opacity="0.85" />
+
+    <!-- Dot 2 -->
+    <circle cx="69" cy="32" r="8" fill="url(#goldDotGrad)" stroke="#b45309" stroke-width="1.5" />
+    <circle cx="67" cy="30" r="2.5" fill="#ffffff" opacity="0.85" />
+
+    <!-- Dot 3 -->
+    <circle cx="90" cy="32" r="8" fill="url(#goldDotGrad)" stroke="#b45309" stroke-width="1.5" />
+    <circle cx="88" cy="30" r="2.5" fill="#ffffff" opacity="0.85" />
+  </g>
+</svg>
