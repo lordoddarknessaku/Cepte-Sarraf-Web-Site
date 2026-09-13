@@ -1,0 +1,4 @@
+const menuBtn=document.querySelector('.menu-btn');const navLinks=document.querySelector('.nav-links');if(menuBtn&&navLinks){menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));}
+const cookie=document.querySelector('.cookie');const cookieBtn=document.querySelector('[data-cookie-accept]');if(cookie&&localStorage.getItem('cs-cookie-consent')==='accepted'){cookie.classList.add('hidden');}if(cookieBtn){cookieBtn.addEventListener('click',()=>{localStorage.setItem('cs-cookie-consent','accepted');cookie?.classList.add('hidden');});}
+const demoForms=document.querySelectorAll('[data-demo-form]');demoForms.forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();const status=form.querySelector('.status');if(status)status.textContent='Form altyapısı tasarıma hazır. Canlı gönderim entegrasyonu yayın aşamasında bağlanacaktır.';}));
+document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
