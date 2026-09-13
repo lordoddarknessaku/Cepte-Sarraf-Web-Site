@@ -119,23 +119,27 @@
       if (legacyLoader) legacyLoader.remove();
     };
 
-    const startTime = Date.now();
-    const minDisplayTime = 750; // Visible duration for the skeleton shimmer
+    if (document.documentElement.classList.contains('page-is-loading')) {
+      const startTime = Date.now();
+      const minDisplayTime = 750; // Visible duration for the skeleton shimmer
 
-    const onPageReady = () => {
-      const elapsed = Date.now() - startTime;
-      const delay = Math.max(0, minDisplayTime - elapsed);
-      setTimeout(removePageSkeleton, delay);
-    };
+      const onPageReady = () => {
+        const elapsed = Date.now() - startTime;
+        const delay = Math.max(0, minDisplayTime - elapsed);
+        setTimeout(removePageSkeleton, delay);
+      };
 
-    if (document.readyState === 'complete') {
-      onPageReady();
+      if (document.readyState === 'complete') {
+        onPageReady();
+      } else {
+        window.addEventListener('load', onPageReady);
+        setTimeout(onPageReady, 2000); // Safety fallback
+      }
     } else {
-      window.addEventListener('load', onPageReady);
-      setTimeout(onPageReady, 2000); // Safety fallback
+      removePageSkeleton();
     }
 
-    // Expose preview helper so the in-place shimmer can be previewed anytime
+    // Expose preview helper so the in-place shimmer can be previewed anytime in console
     window.retriggerSkeletonLoading = (duration = 1500) => {
       document.documentElement.classList.add('page-is-loading');
       setTimeout(removePageSkeleton, duration);
