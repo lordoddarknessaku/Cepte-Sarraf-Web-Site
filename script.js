@@ -101,7 +101,7 @@
         e.preventDefault();
         const status = form.querySelector('.status');
         if (status) {
-          status.textContent = 'Talebiniz alındı. Gelişmeler ve duyurular kayıtlı adresinize iletilecektir.';
+          status.textContent = 'Bu form tanıtım amaçlıdır. Bilgileriniz gönderilmedi ve herhangi bir kayıt oluşturulmadı.';
           status.style.color = 'var(--accent)';
         }
       });

@@ -41,7 +41,20 @@ Bu branch şu anda frontend/prototip aşamasıdır. Aşağıdaki işler canlı y
 
 ## Yerelde çalıştırma
 
-Statik dosyalar doğrudan açılabilir veya basit bir HTTP sunucusu kullanılabilir.
+Site, Vite çok sayfalı statik HTML girişlerini kullanır; `src/App.tsx` mevcut HTML girişine bağlı değildir. Ortak `script.js` modül olarak paketlenir; sayfaları dosya URL'sinden değil HTTP üzerinden açın.
+
+```bash
+npm ci --ignore-scripts
+npm run dev
+node --test tests/site-content.test.mjs
+npm run lint
+npm run build
+npm run preview
+```
+
+Ürün açıklamaları mobil uygulamanın `lib/product_catalog.dart` kataloğundaki gram/adet ayrımı ve ürün adlarına dayanır. Gösterilen fiyatlar örnektir; demo formlar sunucuya veri göndermez. Gerçek mağaza yayını doğrulanmadan indirme bağlantısı etkinleştirilmemelidir.
+
+Aşağıdaki alternatif sunucu kaynak HTML dosyalarını sunar; üretim için `dist/` çıktısı kullanılmalıdır.
 
 Örnek:
 
