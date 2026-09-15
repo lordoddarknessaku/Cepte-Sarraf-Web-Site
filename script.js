@@ -70,9 +70,23 @@
     const menuBtn = document.querySelector('.menu-btn');
     const navLinks = document.querySelector('.nav-links');
     if (menuBtn && navLinks) {
+      navLinks.id = navLinks.id || 'site-navigation';
+      menuBtn.setAttribute('aria-controls', navLinks.id);
+      menuBtn.setAttribute('aria-expanded', 'false');
+      const closeMenu = () => {
+        navLinks.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      };
       menuBtn.addEventListener('click', () => {
         const isOpen = navLinks.classList.toggle('open');
         menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+          closeMenu();
+          menuBtn.focus();
+        }
       });
     }
 

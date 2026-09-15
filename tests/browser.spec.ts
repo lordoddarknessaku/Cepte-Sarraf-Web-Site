@@ -11,6 +11,12 @@ for (const width of [390, 1440]) {
         page.on('pageerror', error => errors.push(error.message));
         await page.goto(`http://127.0.0.1:4176${path}`);
         await page.waitForFunction(() => !document.documentElement.classList.contains('page-is-loading'));
+        // Trigger below-the-fold lazy images and progressive section reveals.
+        for (let y = 0; y < await page.evaluate(() => document.documentElement.scrollHeight); y += 700) {
+          await page.evaluate(offset => scrollTo(0, offset), y);
+          await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => resolve())));
+        }
+        await page.evaluate(() => scrollTo(0, 0));
         await page.evaluate(async () => {
           await Promise.all(document.getAnimations().filter(a => a.effect?.getTiming().iterations !== Infinity).map(a => a.finished.catch(() => {})));
           await Promise.all([...document.images].map(i => i.decode()));
