@@ -16,6 +16,7 @@ export default defineConfig(() => {
         input: {
           main: path.resolve(__dirname, 'index.html'),
           ozellikler: path.resolve(__dirname, 'ozellikler.html'),
+          piyasa: path.resolve(__dirname, 'piyasa.html'),
           hakkimizda: path.resolve(__dirname, 'hakkimizda.html'),
           blog: path.resolve(__dirname, 'blog.html'),
           iletisim: path.resolve(__dirname, 'iletisim.html'),

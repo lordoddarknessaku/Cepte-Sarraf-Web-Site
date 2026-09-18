@@ -25,6 +25,12 @@ test('homepage shows a captured application screen and verified user flow', () =
   }
 });
 
+test('piyasa page exposes the interactive market dashboard entry', () => {
+  const html = read('piyasa.html');
+  assert.match(html, /id="market-root"/);
+  assert.match(html, /src="\/src\/market-main\.tsx"/);
+});
+
 test('features explain the verified mobile product catalogue', () => {
   const html = read('ozellikler.html');
   for (const text of ['22 Ayar 1 Gram', '24 Ayar 1 Gram', '8, 14 ve 18 ayar takı', '22 ayar bilezik', 'Yeni ve eski çeyrek', 'Ata altın', 'adet bazlı', 'gram bazlı']) {
