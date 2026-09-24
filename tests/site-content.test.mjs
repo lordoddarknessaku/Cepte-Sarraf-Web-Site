@@ -65,3 +65,29 @@ test('demo form prevents submission and does not claim a saved request', () => {
   assert.match(status.textContent, /kayıt oluşturulmadı/);
   assert.doesNotMatch(status.textContent, /Talebiniz alındı/);
 });
+
+for (const page of ['blog.html', 'iletisim.html', 'gizlilik.html', 'kullanim-kosullari.html']) {
+  test(`${page}: subpage navigation and skip link stay accessible`, () => {
+    const html = read(page);
+    assert.match(html, /<body class="subpage\b/);
+    assert.match(html, /<a class="skip-link" href="#main">İçeriğe geç<\/a>/);
+    assert.match(html, /<main[^>]*id="main"[^>]*tabindex="-1"/);
+    assert.match(html, /<nav class="nav-links" aria-label="Ana menü"/);
+    assert.match(html, /class="theme-toggle"/);
+  });
+}
+
+test('contact demo states plainly that no message is sent or stored', () => {
+  const html = read('iletisim.html');
+  assert.match(html, /Tanıtım formudur; bilgileriniz gönderilmez veya kaydedilmez/);
+  assert.match(html, /class="status" role="status" aria-live="polite"/);
+  assert.doesNotMatch(html, /doğrudan destek ekibimize iletilir|24 saat içinde yanıt/);
+  assert.match(html, /data-demo-form/);
+});
+
+test('blog and legal draft content is not presented as published material', () => {
+  assert.match(read('blog.html'), /Çok yakında/);
+  for (const page of ['gizlilik.html', 'kullanim-kosullari.html']) {
+    assert.match(read(page), /Taslak alan/);
+  }
+});
