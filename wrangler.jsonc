@@ -1,0 +1,18 @@
+{
+  // Cepte Sarraf web sitesi: Cloudflare Workers Static Assets (yalnizca statik dosya, Worker kodu yok).
+  // Statik istekler ucretsizdir ve gunluk 100k Worker istek kotasindan dusmez.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cepte-sarraf-web",
+  "compatibility_date": "2026-09-30",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./dist",
+    // nginx.production.conf ile ayni davranis: /iletisim -> iletisim.html, /iletisim.html -> /iletisim
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "www.ceptesarraf.com", "custom_domain": true },
+    { "pattern": "ceptesarraf.com", "custom_domain": true }
+  ]
+}
