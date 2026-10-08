@@ -24,7 +24,7 @@ export const AboutAndAudience: React.FC = () => {
 
   const whatItIsNot = [
     {
-      title: 'Çepte Sarraf bir kuyumcu değildir.',
+      title: 'Cepte Sarraf bir kuyumcu değildir.',
       desc: 'Uygulama üzerinden fiziksel altın satışı yapılmaz, kullanıcılardan fiziki altın teslim alınmaz. Amacımız tamamen dijital hesaplama ve fiyat takibidir.',
     },
     {
@@ -33,7 +33,7 @@ export const AboutAndAudience: React.FC = () => {
     },
     {
       title: 'Kullanıcılardan komisyon veya gizli ücret talep etmez.',
-      desc: 'Çepte Sarraf, kullanıcının cebindeki dijital asistanıdır. Hesaplama motoru, sepet oluşturma ve alarm özellikleri ücretsiz ve şeffaftır.',
+      desc: 'Cepte Sarraf, kullanıcının cebindeki dijital asistanıdır. Hesaplama motoru, sepet oluşturma ve alarm özellikleri ücretsiz ve şeffaftır.',
     },
   ];
 
@@ -48,7 +48,7 @@ export const AboutAndAudience: React.FC = () => {
             <span>Şeffaflık & Amacımız</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white">
-            Çepte Sarraf Kimler İçin? <br />
+            Cepte Sarraf Kimler İçin? <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-yellow-500">
               Ne Amaçla Geliştirildi?
             </span>
@@ -69,7 +69,7 @@ export const AboutAndAudience: React.FC = () => {
                   <Users size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">Çepte Sarraf Kimler İçin?</h3>
+                  <h3 className="text-xl font-bold text-white">Cepte Sarraf Kimler İçin?</h3>
                   <p className="text-xs text-slate-400">Günlük hayatında altınla temas eden herkes için</p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export const AboutAndAudience: React.FC = () => {
                   <ShieldCheck size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">Çepte Sarraf Ne Değildir?</h3>
+                  <h3 className="text-xl font-bold text-white">Cepte Sarraf Ne Değildir?</h3>
                   <p className="text-xs text-slate-400">Şeffaf ilkelerimiz ve net sınırlarımız</p>
                 </div>
               </div>

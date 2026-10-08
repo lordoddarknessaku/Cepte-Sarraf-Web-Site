@@ -47,7 +47,7 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Pill Badge with Mascot */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/30 text-amber-300 text-xs md:text-sm font-bold mb-6 shadow-md shadow-amber-500/10 backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span>Altın hesabınız cebinizde • Çepte Sarraf</span>
+              <span>Altın hesabınız cebinizde • Cepte Sarraf</span>
             </div>
 
             {/* Main Headline */}
@@ -152,7 +152,7 @@ export const Hero: React.FC<HeroProps> = ({
                         <CepteSarrafLogo variant="icon" size="sm" />
                         <div>
                           <div className="text-[11px] font-black text-white flex items-center gap-1">
-                            ÇEPTE SARRAF
+                            CEPTE SARRAF
                           </div>
                           <div className="text-[9px] text-emerald-400 flex items-center gap-1">
                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />

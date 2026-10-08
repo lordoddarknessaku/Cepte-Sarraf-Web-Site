@@ -133,7 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAlert }) => {
           <div className="flex items-center gap-3 pb-4 border-b border-slate-800">
             <CepteSarrafLogo variant="icon" size="sm" />
             <div className="text-xs text-slate-400">
-              Altın hesabınız cebinizde. <strong className="text-amber-300">Çepte Sarraf.</strong>
+              Altın hesabınız cebinizde. <strong className="text-amber-300">Cepte Sarraf.</strong>
             </div>
           </div>
 

@@ -97,7 +97,7 @@ export const Features: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-300 text-xs font-bold uppercase tracking-wider mb-4">
             <Sparkles size={14} />
-            <span>Neden Çepte Sarraf?</span>
+            <span>Neden Cepte Sarraf?</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight">
             Altın Hesabında <br className="hidden sm:inline" />
@@ -106,7 +106,7 @@ export const Features: React.FC = () => {
             </span>
           </h2>
           <p className="mt-4 text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
-            Farklı ayarlar, işçilikler, gram ve adet karmaşasını ortadan kaldırıyoruz. Çepte Sarraf ihtiyacınız olan net sonuca en kısa yoldan ulaştırır.
+            Farklı ayarlar, işçilikler, gram ve adet karmaşasını ortadan kaldırıyoruz. Cepte Sarraf ihtiyacınız olan net sonuca en kısa yoldan ulaştırır.
           </p>
         </div>
 

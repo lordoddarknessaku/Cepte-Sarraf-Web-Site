@@ -8,7 +8,7 @@ export const Testimonials: React.FC = () => {
     {
       id: 't1',
       stars: 5,
-      text: 'Düğünümüzden kalan 22 ayar burma bilezikleri ve çeyrekleri tek tek hesaplamak dertti. Çepte Sarraf’ın sepet özelliğine hepsini girdim, anında toplam bozdurma değerini verdi. Kuyumcuya gittiğimde de birebir aynı rakam çıktı!',
+      text: 'Düğünümüzden kalan 22 ayar burma bilezikleri ve çeyrekleri tek tek hesaplamak dertti. Cepte Sarraf’ın sepet özelliğine hepsini girdim, anında toplam bozdurma değerini verdi. Kuyumcuya gittiğimde de birebir aynı rakam çıktı!',
       author: 'Merve & Kaan Aksoy',
       role: 'Yeni Evli Çift, İstanbul',
       avatarInitials: 'MK',
@@ -65,7 +65,7 @@ export const Testimonials: React.FC = () => {
             </span>
           </h2>
           <p className="text-base text-slate-400">
-            Binlerce kullanıcı altın ve takı hesaplamalarını Çepte Sarraf ile şeffafça yönetiyor.
+            Binlerce kullanıcı altın ve takı hesaplamalarını Cepte Sarraf ile şeffafça yönetiyor.
           </p>
         </div>
 

@@ -75,7 +75,7 @@ export const PriceAlertModal: React.FC<PriceAlertModalProps> = ({
             <div className="mt-6 flex items-center justify-center gap-2">
               <CepteSarrafLogo variant="icon" size="sm" />
               <span className="text-xs font-semibold text-amber-300">
-                Çepte Sarraf Fiyat Takipçisi Aktif
+                Cepte Sarraf Fiyat Takipçisi Aktif
               </span>
             </div>
           </div>
@@ -182,7 +182,7 @@ export const PriceAlertModal: React.FC<PriceAlertModalProps> = ({
                   className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white focus:border-amber-400 focus:outline-none"
                 />
                 <p className="text-[11px] text-slate-400 mt-1">
-                  Çepte Sarraf uygulaması yüklüyse bildirim doğrudan telefonunuza anlık gelir.
+                  Cepte Sarraf uygulaması yüklüyse bildirim doğrudan telefonunuza anlık gelir.
                 </p>
               </div>
 

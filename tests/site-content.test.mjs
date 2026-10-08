@@ -77,12 +77,13 @@ for (const page of ['blog.html', 'iletisim.html', 'gizlilik.html', 'kullanim-kos
   });
 }
 
-test('contact demo states plainly that no message is sent or stored', () => {
+test('contact form prepares a mailto message and sends nothing to the site', () => {
   const html = read('iletisim.html');
-  assert.match(html, /Tanıtım formudur; bilgileriniz gönderilmez veya kaydedilmez/);
+  assert.match(html, /id="contactForm"/);
+  assert.match(html, /mailto:destek@ceptesarraf\.com/);
   assert.match(html, /class="status" role="status" aria-live="polite"/);
-  assert.doesNotMatch(html, /doğrudan destek ekibimize iletilir|24 saat içinde yanıt/);
-  assert.match(html, /data-demo-form/);
+  assert.match(html, /göndermeyi siz onaylarsınız/);
+  assert.doesNotMatch(html, /data-demo-form|doğrudan destek ekibimize iletilir|24 saat içinde yanıt/);
 });
 
 test('blog and legal draft content is not presented as published material', () => {

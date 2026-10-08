@@ -245,7 +245,7 @@ export const CepteSarrafLogo: React.FC<CepteSarrafLogoProps> = ({
           <MascotGraphic isIcon={true} />
         </div>
         <span className="text-xs font-bold text-amber-300 tracking-wide">
-          {speechBubble || 'Çepte Sarraf Asistanı'}
+          {speechBubble || 'Cepte Sarraf Asistanı'}
         </span>
       </div>
     );
@@ -265,7 +265,7 @@ export const CepteSarrafLogo: React.FC<CepteSarrafLogoProps> = ({
         <div className="flex flex-col">
           <div className="flex items-center gap-1.5">
             <span className="text-lg md:text-xl font-extrabold tracking-tight text-white group-hover:text-amber-300 transition-colors">
-              ÇEPTE<span className="text-amber-400 ml-1">SARRAF</span>
+              CEPTE<span className="text-amber-400 ml-1">SARRAF</span>
             </span>
             <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
               Canlı
@@ -284,7 +284,7 @@ export const CepteSarrafLogo: React.FC<CepteSarrafLogoProps> = ({
     <div
       className={`relative inline-block ${dim.box} rounded-2xl overflow-hidden shadow-md shadow-blue-950/40 cursor-pointer transition-transform duration-200 hover:scale-105 ${className}`}
       onClick={handleClick}
-      title="Çepte Sarraf - Altın Asistanı"
+      title="Cepte Sarraf - Altın Asistanı"
     >
       <MascotGraphic isIcon={true} />
     </div>

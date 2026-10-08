@@ -44,7 +44,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onStartClick }) => {
             3 Kolay Adımda Sonuca Ulaşın
           </h2>
           <p className="text-base sm:text-lg text-slate-400">
-            Karmaşık altın formüllerini geride bırakın. Çepte Sarraf ile hesaplama doğrudan ve hızlıdır.
+            Karmaşık altın formüllerini geride bırakın. Cepte Sarraf ile hesaplama doğrudan ve hızlıdır.
           </p>
         </div>
 

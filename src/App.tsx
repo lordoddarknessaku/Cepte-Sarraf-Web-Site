@@ -63,7 +63,7 @@ export default function App() {
           onOpenAlertModal={(name, price) => handleOpenAlert(name, price)}
         />
 
-        {/* 5. Core 6 Features from Çepte Sarraf Specification */}
+        {/* 5. Core 6 Features from Cepte Sarraf Specification */}
         <Features />
 
         {/* 6. Dynamic Metrics & Statistics */}

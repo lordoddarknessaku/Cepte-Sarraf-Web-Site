@@ -39,7 +39,7 @@ export const DownloadCTA: React.FC = () => {
 
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6">
-            Çepte Sarraf’ı <br />
+            Cepte Sarraf’ı <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-yellow-500">
               Hemen Ücretsiz İndirin
             </span>
@@ -112,7 +112,7 @@ export const DownloadCTA: React.FC = () => {
               <span>İndirme Bağlantısını Telefonunuza Gönderin</span>
             </div>
             <p className="text-xs text-slate-400 mb-4">
-              Numaranızı girin, Çepte Sarraf mobil indirme linkini SMS ile anında iletelim.
+              Numaranızı girin, Cepte Sarraf mobil indirme linkini SMS ile anında iletelim.
             </p>
 
             <form onSubmit={handleSendSms} className="flex flex-col sm:flex-row gap-2">

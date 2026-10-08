@@ -66,20 +66,15 @@ for (const [path, heading] of pages) {
   });
 }
 
-test('contact demo announces the outcome without sending data', async ({ page }) => {
+test('contact form prepares a mailto message without posting data', async ({ page }) => {
   const postRequests: string[] = [];
   page.on('request', request => {
     if (request.method() === 'POST') postRequests.push(request.url());
   });
   await page.goto('/iletisim.html');
   await page.waitForFunction(() => !document.documentElement.classList.contains('page-is-loading'));
-  await expect(page.getByText('Tanıtım formudur; bilgileriniz gönderilmez veya kaydedilmez.')).toBeVisible();
-  const form = page.getByRole('form', { name: 'Tanıtım iletişim formu' });
-  await form.getByLabel('Ad Soyad').fill('Test Kullanıcısı');
-  await form.getByLabel('E-posta').fill('test@example.com');
-  await form.getByLabel('Konu').fill('Örnek');
-  await form.getByLabel('Mesaj').fill('Bu formun durum mesajı denetleniyor.');
-  await form.getByRole('button', { name: 'Formu Dene' }).click();
-  await expect(form.getByRole('status')).toContainText('Bilgileriniz gönderilmedi');
+  await expect(page.getByText('Mesajınız e-posta uygulamanızda hazırlanır, göndermeyi siz onaylarsınız.')).toBeVisible();
+  const form = page.getByRole('form', { name: 'İletişim formu' });
+  await expect(form.getByRole('button', { name: 'E-posta uygulamasında aç' })).toBeVisible();
   expect(postRequests).toEqual([]);
 });

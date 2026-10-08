@@ -142,7 +142,7 @@ export const Footer: React.FC = () => {
                   onClick={() => scrollTo('about')}
                   className="hover:text-amber-300 transition-colors cursor-pointer"
                 >
-                  Çepte Sarraf Ne Değildir?
+                  Cepte Sarraf Ne Değildir?
                 </button>
               </li>
               <li>
@@ -175,7 +175,7 @@ export const Footer: React.FC = () => {
             <span>Yasal Bilgilendirme ve Sorumluluk Reddi</span>
           </div>
           <p>
-            <strong>Çepte Sarraf bir kuyumcu, döviz bürosu veya aracı kurum değildir.</strong> Platformumuz üzerinden fiziksel altın veya kıymetli maden alım-satımı gerçekleştirilmemektedir. Sunulan fiyatlar, serbest piyasa ve Kapalıçarşı genel gösterge kurları olup bilgilendirme ve tahmini hesaplama amaçlıdır. Kuyumculardaki işçilik, model, bölge ve anlık piyasa koşullarına göre nihai fiyatlar farklılık gösterebilir. Uygulama içeriği yatırım tavsiyesi (YTD) niteliğinde değildir.
+            <strong>Cepte Sarraf bir kuyumcu, döviz bürosu veya aracı kurum değildir.</strong> Platformumuz üzerinden fiziksel altın veya kıymetli maden alım-satımı gerçekleştirilmemektedir. Sunulan fiyatlar, serbest piyasa ve Kapalıçarşı genel gösterge kurları olup bilgilendirme ve tahmini hesaplama amaçlıdır. Kuyumculardaki işçilik, model, bölge ve anlık piyasa koşullarına göre nihai fiyatlar farklılık gösterebilir. Uygulama içeriği yatırım tavsiyesi (YTD) niteliğinde değildir.
           </p>
         </div>
 
@@ -183,7 +183,7 @@ export const Footer: React.FC = () => {
         <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div className="flex items-center gap-2">
             <CepteSarrafLogo variant="icon" size="sm" />
-            <span>© {currentYear} Çepte Sarraf. Tüm hakları saklıdır.</span>
+            <span>© {currentYear} Cepte Sarraf. Tüm hakları saklıdır.</span>
           </div>
           <div className="text-slate-400">
             Altın hesabınız cebinizde güvenle.

@@ -720,7 +720,7 @@ export const GoldCalculator: React.FC<GoldCalculatorProps> = ({ onOpenAlertModal
                       <button
                         onClick={() =>
                           alert(
-                            'Portföyünüz kaydedildi! Çepte Sarraf mobil uygulamasında hesabınızla eşitlenecektir.'
+                            'Portföyünüz kaydedildi! Cepte Sarraf mobil uygulamasında hesabınızla eşitlenecektir.'
                           )
                         }
                         className="px-5 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm shadow-md transition-all active:scale-95 flex items-center gap-2"
@@ -743,7 +743,7 @@ export const GoldCalculator: React.FC<GoldCalculatorProps> = ({ onOpenAlertModal
           </div>
           <div className="text-xs sm:text-sm text-slate-300 leading-relaxed">
             <span className="font-bold text-amber-300">Sarraf Usta'dan Hatırlatma:</span>{' '}
-            Altın takılarda işçilik payı yalnızca satın alırken ödenir; bozdururken milyem (ayar) ve net gramaj esas alınır. Çepte Sarraf hesaplayıcısı hurda bozdurma değerinizi Kapalıçarşı canlı verileriyle birebir hesaplar.
+            Altın takılarda işçilik payı yalnızca satın alırken ödenir; bozdururken milyem (ayar) ve net gramaj esas alınır. Cepte Sarraf hesaplayıcısı hurda bozdurma değerinizi Kapalıçarşı canlı verileriyle birebir hesaplar.
           </div>
         </div>
       </div>
